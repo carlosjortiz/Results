@@ -1,3 +1,4 @@
+using Results.Abstractions;
 using Results.ResultTypes;
 using Results.WellKnownErrors;
 
@@ -7,7 +8,7 @@ namespace Results;
 /// Represents the result of an operation that can either succeed or fail.
 /// </summary>
 /// <typeparam name="TValue">The type of the value contained in a successful result.</typeparam>
-public class Result<TValue>
+public class Result<TValue> : IResult
 {
 	private readonly ResultType _innerResult;
 	
@@ -86,6 +87,16 @@ public class Result<TValue>
 	///     This method retrieves the type of the result stored within the Result object.
 	/// </remarks>
 	public Type ResultType => _innerResult.GetType();
+	
+	/// <summary>
+	///     Gets the type of the result value contained in the Result object.
+	/// </summary>
+	/// <returns>The type of the result value.</returns>
+	/// <remarks>
+	///     The Result object represents the result of an operation that can either succeed or fail.
+	///     This method retrieves the type of the value unwrapped from the Result object.
+	/// </remarks>
+	public Type ValueType => typeof(TValue);
 
 	/// <summary>
 	/// Retrieves the operation result if it was successful.
