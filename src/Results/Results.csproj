@@ -15,7 +15,7 @@
 			information in an operation result object, enhancing the ability to reason about the state and outcomes
 			of operations in complex systems.
 		</Description>
-		<RepositoryUrl>https://github.com/Q-rtix/Results</RepositoryUrl>
+		<RepositoryUrl>https://github.com/carlosjortiz/Results</RepositoryUrl>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 		<Title>Results</Title>
 		
@@ -30,7 +30,7 @@
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<PackageTags>Result Results</PackageTags>
 		<Copyright>Copyright (c) Carlos J. Ortiz. All rights reserved.</Copyright>
-		<PackageProjectUrl>https://q-rtix.github.io/Results/</PackageProjectUrl>
+		<PackageProjectUrl>https://carlosjortiz.github.io/Results/</PackageProjectUrl>
 	</PropertyGroup>
 
 	<PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
