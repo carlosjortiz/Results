@@ -20,7 +20,7 @@
 		<Title>Results</Title>
 		
 		<PackageId>Qrtix.Results</PackageId>
-		<Version>2.1.0</Version>
+		<Version>2.1.1</Version>
 		<PackageReleaseNotes>
 			- Add `IResult` interface
 		</PackageReleaseNotes>
