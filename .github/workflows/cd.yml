@@ -49,7 +49,7 @@ jobs:
     needs: build
     steps:
       - name: Downloading artifact
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: results-lib
       - name: Testing artifact downloads
